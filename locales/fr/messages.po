@@ -1,0 +1,311 @@
+msgid ""
+msgstr ""
+"POT-Creation-Date: 2024-06-04 20:33+0200\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: @lingui/cli\n"
+"Language: fr\n"
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Plural-Forms: \n"
+
+#: app/(public)/reset-password.tsx:55
+msgid "<0>You will receive an email with instructions</0><1>on how to reset your password.</1>"
+msgstr "<0>Vous recevrez un email avec des instructions</0><1>sur la façon de réinitialiser votre mot de passe.</1>"
+
+#: app/(public)/confirm.tsx:90
+#: app/(public)/confirm.tsx:130
+msgid "Activate your account"
+msgstr "Activez votre compte"
+
+#: app/(public)/confirm.tsx:101
+msgid "Activation Code"
+msgstr "Code d'activation"
+
+#: app/(public)/sign-up.tsx:168
+msgid "Already have an account?"
+msgstr "Vous avez déjà un compte ?"
+
+#: app/(public)/sign-up.tsx:148
+msgid "By clicking on the sign-up button, you agree to our terms and conditions and privacy statements."
+msgstr "En cliquant sur le bouton d'inscription, vous acceptez nos termes et conditions ainsi que nos déclarations de confidentialité."
+
+#: components/profile-edit-card.tsx:167
+msgid "Cancel"
+msgstr "Annuler"
+
+#: app/(protected)/change-email.tsx:86
+#: app/(protected)/profile.tsx:18
+#: components/language-switcher.tsx:49
+#: components/profile-edit-card.tsx:150
+msgid "Change Email"
+msgstr "Change d'email"
+
+#: app/(protected)/change-password.tsx:72
+#: app/(protected)/change-password.tsx:125
+#: components/profile-edit-card.tsx:153
+msgid "Change Password"
+msgstr "Changer de mot de passe"
+
+#: app/(protected)/change-email.tsx:53
+msgid "Change your email"
+msgstr "Changez votre email"
+
+#: app/+not-found.tsx:14
+msgid "Click to get back to the app"
+msgstr "Cliquez pour revenir à l'application"
+
+#: components/toast-notification.tsx:80
+msgid "Close"
+msgstr ""
+
+#: app/(protected)/change-password.tsx:98
+#: app/(public)/sign-up.tsx:126
+msgid "Confirm password"
+msgstr "Confirmez le mot de passe"
+
+#: app/(protected)/change-password.tsx:97
+#: app/(public)/sign-up.tsx:125
+msgid "Confirm Password"
+msgstr "Confirmez le mot de passe"
+
+#: app/(public)/sign-in.tsx:137
+msgid "Don't have an account?"
+msgstr "Pas de compte ?"
+
+#: app/(protected)/change-email.tsx:64
+#: app/(protected)/change-email.tsx:65
+#: app/(public)/reset-password.tsx:67
+#: app/(public)/reset-password.tsx:68
+#: app/(public)/sign-in.tsx:75
+#: app/(public)/sign-in.tsx:76
+#: app/(public)/sign-up.tsx:96
+#: app/(public)/sign-up.tsx:97
+msgid "Email"
+msgstr "Email"
+
+#: app/(public)/confirm.tsx:139
+msgid ""
+"If you have not received an email, please check you spam folder. You\n"
+"can also"
+msgstr ""
+
+#: app/(public)/confirm.tsx:139
+#~ msgid "If you have not received an email, please check you spam folder. You can also"
+#~ msgstr "Si vous n'avez pas reçu d'email, veuillez vérifier votre dossier spam. Vous pouvez également"
+
+#: app/(protected)/home.tsx:23
+msgid "Mark messages as read"
+msgstr "Marques messages comme lus"
+
+#: app/(protected)/change-password.tsx:83
+msgid "New Password"
+msgstr "Nouveau mot de passe"
+
+#: app/(protected)/change-password.tsx:84
+#: app/(public)/sign-in.tsx:90
+#: app/(public)/sign-in.tsx:91
+#: app/(public)/sign-up.tsx:111
+#: app/(public)/sign-up.tsx:112
+msgid "Password"
+msgstr "Mot de passe"
+
+#: app/(protected)/change-email.tsx:20
+#: app/(public)/reset-password.tsx:20
+#: app/(public)/sign-in.tsx:21
+msgid "Please enter a valid email"
+msgstr "Veuillez entrer un email valide"
+
+#: app/(protected)/change-email.tsx:19
+#: app/(public)/reset-password.tsx:19
+#: app/(public)/sign-in.tsx:20
+msgid "Please enter an email"
+msgstr "Veuillez entrer un email"
+
+#: app/(public)/sign-in.tsx:25
+#~ msgid "Please enter at least 6 characters"
+#~ msgstr "Veuillez entrer au moins 6 caractères"
+
+#: app/(public)/sign-in.tsx:25
+msgid "Please enter at least 6 characters."
+msgstr ""
+
+#: app/(protected)/change-password.tsx:20
+#: app/(protected)/change-password.tsx:34
+#~ msgid "Please enter at least 8 characters"
+#~ msgstr "Veuillez entrer au moins 8 caractères"
+
+#: app/(protected)/change-password.tsx:20
+#: app/(protected)/change-password.tsx:34
+msgid "Please enter at least 8 characters."
+msgstr ""
+
+#: app/(protected)/change-password.tsx:21
+#: app/(public)/sign-in.tsx:26
+#~ msgid "Please enter fewer than 64 characters"
+#~ msgstr "Veuillez entrer moins de 64 caractères."
+
+#: app/(protected)/change-password.tsx:21
+#: app/(public)/sign-in.tsx:26
+msgid "Please enter fewer than 64 characters."
+msgstr ""
+
+#: app/(public)/confirm.tsx:22
+msgid "Please enter the validation code"
+msgstr "Veuillez entrer le code de validation"
+
+#: app/(protected)/change-email.tsx:55
+msgid "Please enter your new email address."
+msgstr "Veuillez entrer votre nouvelle adresse email"
+
+#: app/(protected)/change-password.tsx:74
+msgid "Please enter your new password."
+msgstr "Veuillez entrer votre nouveau mot de passe"
+
+#: app/(public)/reset-password.tsx:98
+msgid "Remember your password?"
+msgstr "Vous souvenez-vous de votre mot de passe ?"
+
+#: app/(public)/reset-password.tsx:53
+#: app/(public)/reset-password.tsx:89
+msgid "Reset Password"
+msgstr "Réinitialisez le mot de passe"
+
+#: app/(public)/sign-in.tsx:107
+msgid "Reset Your Password"
+msgstr "Réinitialiser votre mot de passe"
+
+#: components/profile-edit-card.tsx:175
+msgid "Save"
+msgstr "Sauvgarder"
+
+#: components/profile-edit-card.tsx:175
+msgid "Saving..."
+msgstr "Sauvgarder..."
+
+#: app/(protected)/home.tsx:24
+msgid "Showcase, h1"
+msgstr "Bande annonce, h1"
+
+#: app/(public)/reset-password.tsx:99
+#: app/(public)/sign-up.tsx:169
+msgid "Sign in"
+msgstr "Se connecter"
+
+#: app/(public)/sign-in.tsx:61
+#: app/(public)/sign-in.tsx:128
+msgid "Sign In"
+msgstr "Se connecter"
+
+#: app/(public)/sign-in.tsx:138
+msgid "Sign up"
+msgstr "S'inscrire"
+
+#: app/(public)/sign-up.tsx:85
+#: app/(public)/sign-up.tsx:158
+msgid "Sign Up"
+msgstr "S'inscrire"
+
+#: app/(public)/sign-up.tsx:141
+msgid ""
+"Something went wrong. Maybe you already have an account with this\n"
+"email address?"
+msgstr ""
+
+#: app/(public)/sign-up.tsx:141
+#~ msgid "Something went wrong. Maybe you already have an account with this email address?"
+#~ msgstr "Quelque chose s'est mal passé. Peut-être avez-vous déjà un compte avec cette adresse email ?"
+
+#: app/(public)/confirm.tsx:117
+msgid "Something went wrong. Please double-check your code and try again."
+msgstr "Quelque chose s'est mal passé. Veuillez vérifier votre code et réessayerQuelque chose s'est mal passé. Veuillez vérifier votre code et réessayer"
+
+#: app/(public)/confirm.tsx:74
+msgid "Success"
+msgstr "Succès"
+
+#: app/(public)/sign-in.tsx:114
+msgid ""
+"There is something wrong with your email or password. Please try\n"
+"again."
+msgstr "Il y a un problème avec votre email ou mot de passe. Veuillez réessayer."
+
+#: app/(public)/sign-in.tsx:114
+#~ msgid "There is something wrong with your email or password. Please try again."
+#~ msgstr "Il y a un problème avec votre email ou mot de passe. Veuillez réessayer."
+
+#: app/(protected)/change-password.tsx:112
+msgid "There was an error changing your password. Please try again."
+msgstr "Il y a eu un problème pour changer votre mot de passe. Veuillez réessayer."
+
+#: app/+not-found.tsx:12
+#~ msgid "This screen does not exist"
+#~ msgstr "Cet écran n'existe pas"
+
+#: app/+not-found.tsx:12
+msgid "This screen does not exist."
+msgstr "Cet écran n'existe pas"
+
+#: app/(public)/confirm.tsx:92
+#: app/(public)/sign-in.tsx:66
+#: app/(public)/sign-up.tsx:87
+msgid "to continue to Expo Supabase Starter"
+msgstr "pour continuer vers Expo Supabase Starter"
+
+#: app/(protected)/profile.tsx:30
+#~ msgid "Toggle language to {0}"
+#~ msgstr "Change la langue en {0}"
+
+#: app/(public)/confirm.tsx:142
+msgid "try again"
+msgstr "réessayer"
+
+#: components/profile-view-card.tsx:69
+msgid "Update"
+msgstr "Mettre à jour"
+
+#: components/profile-edit-card.tsx:136
+#: components/profile-edit-card.tsx:137
+msgid "Username"
+msgstr "Nom d'utilisateur"
+
+#: app/(public)/sign-in.tsx:63
+msgid "View Activation screen"
+msgstr "Voir l'écran d'activation"
+
+#: components/language-switcher.tsx:47
+#: components/language-switcher.tsx:47
+msgid "Yes"
+msgstr "Oui"
+
+#: app/(public)/confirm.tsx:23
+msgid "Your code is not complete, please enter all six numbers"
+msgstr "Votre code n'est pas complet, veuillez entrer les six chiffres"
+
+#: app/(public)/confirm.tsx:24
+msgid "Your code is too long, please enter 6 numbers"
+msgstr "Votre code est trop long, veuillez entrer 6 chiffres"
+
+#: app/(public)/confirm.tsx:75
+msgid "Your email has been changed successfully."
+msgstr "Votre email a été changé avec succès"
+
+#: app/(protected)/change-password.tsx:24
+msgid "Your password must have at least one lowercase letter."
+msgstr "Votre mot de passe doit contenir au moins une lettre minuscule"
+
+#: app/(protected)/change-password.tsx:30
+msgid "Your password must have at least one number."
+msgstr "Votre mot de passe doit contenir au moins un chiffre."
+
+#: app/(protected)/change-password.tsx:28
+msgid "Your password must have at least one uppercase letter."
+msgstr "Votre mot de passe doit contenir au moins une lettre majuscule."
+
+#: app/(protected)/change-password.tsx:39
+msgid "Your passwords do not match."
+msgstr "Vos mots de passe ne correspondent pas."
