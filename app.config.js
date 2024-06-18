@@ -15,14 +15,14 @@ export default {
     assetBundlePatterns: ["**/*"],
     ios: {
       supportsTablet: true,
-      bundleIdentifier: "com.mrkshm.supabase-starter",
+      bundleIdentifier: process.env.IOS_BUNDLE_IDENTIFIER,
     },
     android: {
       adaptiveIcon: {
         foregroundImage: "./assets/images/adaptive-icon.png",
         backgroundColor: "#ffffff",
       },
-      package: "com.mrkshm.supabasestarter",
+      package: process.env.ANDROID_PACKAGE_NAME,
     },
     web: {
       bundler: "metro",
