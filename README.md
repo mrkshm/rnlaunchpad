@@ -1,8 +1,8 @@
-# SupaStarter Native
-
-## ⚠️ Work in progress ⚠️
+# React Native Launchpad (feat. Supabase)
 
 An extended starter template for React Native with Supabase. Includes auth flow, user profile (with editing and image upload), internationalization, error logging and more.
+
+Setup instructions in this README file or on the [RN Launchpad website](https://rnlaunchpad.com).
 
 ## Technologies Used
 
@@ -17,33 +17,51 @@ An extended starter template for React Native with Supabase. Includes auth flow,
 - [Bugsnag](https://www.bugsnag.com)
 - [Mixpanel](http://mixpanel.com)
 
-## Get Going
+## Getting Started
 
-### Supabase
+### The Basics
+
+1. Clone this repo. `git clone https://github.com/mrkshm/rnlaunchpad.git`
+2. Move into the new folder `cd rnlaunchpad`
+3. Install the dependencies `npm install`
+4. Rename example.env to .env
+
+### Setting Up Supabase
 
 1. Set up a new Supabase project.
-2. In the project, create a new storage bucket.
-3. Create a policy for your new storage bucket: choose "Get Started Quickly" and then "Give users access to only their own top level folder named as uid", allow everything (DELETE, UPDATE, INSERT, SELECT)
-4. Change the email templates for sign-up, password-reset and confirmation to something like: `<p>Here is your token<p><p>{{ .Token }}</p>`
-5. Rename example.env to .env and fill in the values for Supabase Anon Key, Supabase Url and the name of the bucket you just created.
-6. If you have not yet installed Supabase CLI, do so now.
-7. Link your local project with the Supabase project.
-8. Push the migrations. (supabase db push)
+2. Find your Supabase Url and enter it in the .env file ("EXPO_PUBLIC_SUPABASE_URL").
+3. Find your Supabase API Key and enter it in the .env file ("EXPO_PUBLIC_SUPABASE_ANON_KEY").
+4. In Supabase, under the Storage tab, create a bucket.
+5. Enter the name of your newly created Storage bucket in the .env file ("EXPO_PUBLIC_SUPABASE_USER_BUCKET").
+6. Create a policy for your storage bucket. Choose "Get Started Quickly" and then "Give users access to only their own top level folder named as uid". Allow everything (DELETE, UPDATE, INSERT, SELECT).
+7. In the Authentication tab under Email Templates, change the email templates for "Confirm signup", "Change Email Address" and "Reset Password" to something like: `<p>Please enter the following code in the activation screen<p><p>{{ .Token }}</p>`.
+8. If you have not yet installed Supabase CLI, please do so now before continuing.
+9. Link your local project with the Supabase project. `supabase link`, then choose the project you just created.
+10. Push the migrations (`supabase db push`). When asked if you want to push the migrations, confirm by pressing `Y`.
+
+### The First Build
+
+1. In the .env file, adjust `IOS_BUNDLE_IDENTIFIER` and `ANDROID_PACKAGE_NAME`.
+2. In your terminal, run `npx expo run:ios` (This will be only necessary for the first build, next time you want to start the project, `npx expo` will be enough.)
+3. Press "i" to open your simulator. (You may have to configure it first.)
+4. Press the button "Show an Error for Testing". You should see a message getting logged to the console. Same for the other button "Log an Event for Testing".
+
+## Advanced Topics
 
 ### Notes about Authentication
 
-I decided on using OTP Codes for everything, to make it easier to get started. Setting up deep linking can be a bit difficult. When a registered user is trying to sign up again, he is logged in automatically. I cheat a little for password reset: Supabase Starter simply does a passwordless sign in for the email address provided, and on successful entering the confirmation code, forwards to the password change screen. If you want to modify any of these behaviours, you can easily do so in /context/auth-provider.tsx
+I decided on using OTP Codes for everything, to make it easier to get started. Setting up deep linking can be a bit involved. When a registered user is trying to sign up again, he is logged in automatically. I cheat a little for password reset: Supabase Starter simply does a passwordless login for the email address provided, and, once the user successfully enters the confirmation code, navigates to the password change screen. If you want to modify any of these behaviours, you can easily do so in /context/auth-provider.tsx
 
 ### Internationalization
 
-Everything is already set up for Internationalization with Lingui. Check the Lingui docs on how to use it.
+Everything is already set up for Internationalization with Lingui. Check the [Lingui docs](https://lingui.dev/introduction) on how to use it in detail.
 
 The very basics:
 
-- Use `npm run extract` to rebuild the po translation files (it will automatically find all the translation strings in your code) so you or your translators can translate.
-- Once you have translated the po files, use `npm run compile` to compile them to json files that will be used by Lingui to display the translations.
+- Use `npm run extract` to rebuild the po translation files (it will automatically find all the translation strings in your code) so you (or your translators, or your preferred AI) can translate.
+- Once you have translated the po files, use `npm run compile` to compile them to json files. Those will be used by Lingui to display the translations.
 
-If you do not need internationalization, you can delete the language switcher and pretty much ignore it. (If you are really sure that you will never need it you may want to uninstall Lingui as well as the @formatjs tools from the project and replace all {t`some string`} with some string)
+If you do not need internationalization, you can simply delete the language switcher and pretty much ignore it. (If you are really sure that you will never need it you may want to uninstall Lingui as well as the @formatjs tools from the project and replace all `{t`some string`}` with `some string`)
 
 ### Analytics (optional)
 
@@ -52,15 +70,14 @@ By default, analytics is set to false and tracked events are simply logged to th
 
 ### Error Reporting (optional)
 
-To enable error reporting with Bugsnag, run:
-`npx bugsnag-expo-cli init`
+To enable error reporting with Bugsnag, run `npx bugsnag-expo-cli init`.
 When it asks you if you want code added to App.js, answer No.
 After the setup is complete, set EXPO_PUBLIC_ERROR_REPORTING=true
 By default, error reporting is set to false and errors are simply logged to the console.
 
-## Docs and Presentation
+## Goals
 
-Find better and more detailed documentation on the NativeSupaStarterKit website.
+This project wants to make it easier to get started with a React Native project to experiment with app ideas or build a prototype fast.
 
 ## Credits
 

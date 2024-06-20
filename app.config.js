@@ -1,11 +1,11 @@
 export default {
   expo: {
-    name: "Supabase Starter",
-    slug: "supabase-starter",
+    name: "RN Launchpad",
+    slug: "rn-launchpad",
     version: "1.0.0",
     orientation: "portrait",
     icon: "./assets/images/icon.png",
-    scheme: "com.supastarter",
+    scheme: "com.rnlaunchpad",
     userInterfaceStyle: "automatic",
     splash: {
       image: "./assets/images/splash.png",

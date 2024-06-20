@@ -14,7 +14,7 @@ export default function Screen() {
     <SafeAreaView className="flex-1">
       <ScrollView>
         <View className="flex-1 justify-center items-center gap-5 p-6 bg-secondary/30">
-          <H1>Welcome to SupaStarter</H1>
+          <H1>Welcome to RN Launchpad</H1>
           <P>An template to help you build a great React Native app.</P>
           <AnalyticsAndErrorTester />
           <RickCard />
