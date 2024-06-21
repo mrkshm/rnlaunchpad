@@ -25,6 +25,7 @@ Setup instructions in this README file or on the [RN Launchpad website](https://
 2. Move into the new folder `cd rnlaunchpad`
 3. Install the dependencies `npm install`
 4. Rename example.env to .env
+5. In your .env file, you may want to change the values for `IOS_BUNDLE_IDENTIFIER` and `ANDROID_PACKAGE_NAME`.
 
 ### Setting Up Supabase
 
