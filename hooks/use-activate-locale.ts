@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { useLingui } from "@lingui/react";
 
 import type { Option } from "~/components/ui/select";
@@ -24,7 +25,10 @@ export const useActivateLocale = () => {
   const loadAndActivateLocale = async (newActiveLanguage: Option) => {
     const activeLanguage = i18n.locale;
     if (newActiveLanguage) {
-      if (activeLanguage === newActiveLanguage.value) return;
+      if (activeLanguage === newActiveLanguage.value) {
+        // console.log("Language already active");
+        return;
+      }
       if (user) {
         supabase
           .from("user_profiles")

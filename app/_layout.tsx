@@ -52,10 +52,14 @@ function RootLayout() {
 
   useEffect(() => {
     (async () => {
+      const { data: sessionData, error: sessionError } =
+        await supabase.auth.getSession();
+      if (!sessionData || sessionError) {
+        return;
+      }
       const { data: authUser, error: authUserError } =
         await supabase.auth.getUser();
       if (authUserError) {
-        console.error("Error fetching user: ", authUserError);
         return;
       } else if (!authUser) {
         return;
@@ -68,10 +72,13 @@ function RootLayout() {
         .single();
 
       if (userProfileError) {
-        console.log("Error fetching user's language: ", userProfileError);
+        // console.log("Error fetching user's language: ", userProfileError);
         // Use default language (already loaded) if there's an error
+        // i18n.loadAndActivate({
+        //   locale: "en",
+        //   messages,
+        // });
       } else if (userProfile) {
-        // Use the user's language only if different from the default and supported
         const userLanguage = userProfile.language;
         if (
           !userLanguage ||

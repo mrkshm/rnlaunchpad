@@ -2,7 +2,7 @@ import { Link, useRouter } from "expo-router";
 import { t } from "@lingui/macro";
 import { useState } from "react";
 import { useForm } from "react-hook-form";
-import { ActivityIndicator, Text, View } from "react-native";
+import { ActivityIndicator, View } from "react-native";
 import * as v from "valibot";
 import { valibotResolver } from "@hookform/resolvers/valibot";
 
@@ -10,6 +10,7 @@ import ErrorInlineDisplay from "~/components/error-inline-display";
 import { SafeAreaView } from "~/components/safe-area-view";
 import { Button } from "~/components/ui/button";
 import { Form, FormField, FormInput } from "~/components/ui/form";
+import { Text } from "~/components/ui/text";
 import { H1, Muted } from "~/components/ui/typography";
 import { useAuth } from "~/context/auth-provider";
 import { useAnalytics } from "~/hooks/use-analytics";

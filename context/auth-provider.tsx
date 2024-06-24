@@ -98,7 +98,7 @@ export const AuthProvider = ({ children }: AuthProviderProps) => {
   const [isVerifyingOtp, setIsVerifyingOtp] = useState(false);
 
   const fetchProfile = useCallback(async () => {
-    if (!session) return;
+    if (!session || !session.user) return;
     const { data, error } = await getUserById({ userId: session.user.id });
     if (error) throw error;
     setProfile({

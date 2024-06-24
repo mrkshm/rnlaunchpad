@@ -1,7 +1,3 @@
-import { Link } from "expo-router";
-import { useLingui } from "@lingui/react";
-import { t } from "@lingui/macro";
-import { Text } from "react-native";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 
 import {
@@ -29,7 +25,7 @@ export default function LanguageSwitcher() {
     right: 12,
   };
 
-  const { i18n } = useLingui();
+  // const { i18n } = useLingui();
   const loadAndActivateLocale = useActivateLocale();
   const { profile } = useAuth();
 
@@ -42,40 +38,32 @@ export default function LanguageSwitcher() {
   };
 
   return (
-    <>
-      {/* TODO: TEST CODE, DELETE EVENTUALLY */}
-      <Text>
-        Testing Translation: {t`Yes`}, {i18n.locale} {i18n._(t`Yes`)}
-      </Text>
-      <Link href="/(protected)/change-email">{t`Change Email`}</Link>
-      {/* TODO: END TEST CODE */}
-      <Select
-        defaultValue={{
-          value: profile?.language ?? "en",
-          label:
-            profile?.language && profile.language in SUPPORTED_LANGUAGES
-              ? SUPPORTED_LANGUAGES[profile.language as SupportedLanguage]
-              : "English",
-        }}
-        onValueChange={handleSelectionChange}
-      >
-        <SelectTrigger className="w-[250px]">
-          <SelectValue
-            className="text-foreground text-sm native:text-lg"
-            placeholder="Select a fruit"
-          />
-        </SelectTrigger>
-        <SelectContent insets={contentInsets} className="w-[250px]">
-          <SelectGroup>
-            <SelectLabel>Languages</SelectLabel>
-            {Object.entries(SUPPORTED_LANGUAGES).map(([key, value]) => (
-              <SelectItem key={key} label={value} value={key}>
-                {key}
-              </SelectItem>
-            ))}
-          </SelectGroup>
-        </SelectContent>
-      </Select>
-    </>
+    <Select
+      defaultValue={{
+        value: profile?.language ?? "en",
+        label:
+          profile?.language && profile.language in SUPPORTED_LANGUAGES
+            ? SUPPORTED_LANGUAGES[profile.language as SupportedLanguage]
+            : "English",
+      }}
+      onValueChange={handleSelectionChange}
+    >
+      <SelectTrigger className="w-[250px]">
+        <SelectValue
+          className="text-foreground text-sm native:text-lg"
+          placeholder="Select a fruit"
+        />
+      </SelectTrigger>
+      <SelectContent insets={contentInsets} className="w-[250px]">
+        <SelectGroup>
+          <SelectLabel>Languages</SelectLabel>
+          {Object.entries(SUPPORTED_LANGUAGES).map(([key, value]) => (
+            <SelectItem key={key} label={value} value={key}>
+              {key}
+            </SelectItem>
+          ))}
+        </SelectGroup>
+      </SelectContent>
+    </Select>
   );
 }
