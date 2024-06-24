@@ -26,7 +26,6 @@ export const useActivateLocale = () => {
     if (newActiveLanguage) {
       if (activeLanguage === newActiveLanguage.value) return;
       if (user) {
-        console.log("We have a user", user.id);
         supabase
           .from("user_profiles")
           .update({

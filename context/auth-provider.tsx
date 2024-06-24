@@ -110,7 +110,7 @@ export const AuthProvider = ({ children }: AuthProviderProps) => {
   }, [session]);
 
   useEffect(() => {
-    if (user) fetchProfile();
+    if (user?.email) fetchProfile();
   }, [user]);
 
   const signUp = async ({ email, password }: LoginArgs) => {

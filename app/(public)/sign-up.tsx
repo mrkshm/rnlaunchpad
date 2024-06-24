@@ -86,7 +86,7 @@ export default function SignUp() {
 
   return (
     <SafeAreaView className="flex-1 bg-background p-4">
-      <View className="flex-1 pt-8">
+      <View className="pt-8">
         <H1 className="self-start">{t`Sign Up`}</H1>
         <Muted className="self-start mb-5">
           {t`to continue to Expo Supabase Starter`}
