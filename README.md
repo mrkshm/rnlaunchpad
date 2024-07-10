@@ -36,6 +36,7 @@ Setup instructions in this README file or on the [RN Launchpad website](https://
 5. Enter the name of your newly created Storage bucket in the .env file ("EXPO_PUBLIC_SUPABASE_USER_BUCKET").
 6. Create a policy for your storage bucket. Choose "Get Started Quickly" and then "Give users access to only their own top level folder named as uid". Allow everything (DELETE, UPDATE, INSERT, SELECT).
 7. In the Authentication tab under Email Templates, change the email templates for "Confirm signup", "Change Email Address" and "Reset Password" to something like: `<p>Please enter the following code in the activation screen<p><p>{{ .Token }}</p>`.
+8. In Supabase, navigate to Authentication -> Provider -> Email and deselect *Secure Email Change*.
 8. If you have not yet installed Supabase CLI, please do so now before continuing.
 9. Link your local project with the Supabase project. `supabase link`, then choose the project you just created.
 10. Push the migrations (`supabase db push`). When asked if you want to push the migrations, confirm by pressing `Y`.
